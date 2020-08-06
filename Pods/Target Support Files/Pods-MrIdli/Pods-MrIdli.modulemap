@@ -1,0 +1,6 @@
+framework module Pods_MrIdli {
+  umbrella header "Pods-MrIdli-umbrella.h"
+
+  export *
+  module * { export * }
+}

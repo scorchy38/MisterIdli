@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		4197913124DAAB6E00C229DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4197912F24DAAB6E00C229DB /* LaunchScreen.storyboard */; };
 		4197913C24DAAB6E00C229DB /* MrIdliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197913B24DAAB6E00C229DB /* MrIdliTests.swift */; };
 		4197914724DAAB6E00C229DB /* MrIdliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197914624DAAB6E00C229DB /* MrIdliUITests.swift */; };
+		4197915524DABD0E00C229DB /* collectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197915424DABD0E00C229DB /* collectionViewCell.swift */; };
+		41B4ED6324DB084D00954FDB /* WebViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4ED6224DB084D00954FDB /* WebViewer.swift */; };
+		41B4ED6524DB0B3000954FDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B4ED6424DB0B3000954FDB /* GoogleService-Info.plist */; };
+		41B4ED6724DB0BA700954FDB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B4ED6624DB0BA700954FDB /* WebKit.framework */; };
+		41E31FC524DBDAF200BC488F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E31FC424DBDAF200BC488F /* MenuView.swift */; };
+		808202F7E59E78CBCEC752AE /* Pods_MrIdliTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF72EA88F3C8BCB931A3D18B /* Pods_MrIdliTests.framework */; };
+		DA7C70ECB3732342E194B578 /* Pods_MrIdli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A1C5CA8B0E6332BE642D35 /* Pods_MrIdli.framework */; };
+		E5D704BE07E760F66EC6644A /* Pods_MrIdli_MrIdliUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F64BA92D50F9AF87D8DBDE /* Pods_MrIdli_MrIdliUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4197912124DAAB6C00C229DB /* MrIdli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrIdli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0080A8B458BD69F051C46F17 /* Pods-MrIdliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrIdliTests.release.xcconfig"; path = "Target Support Files/Pods-MrIdliTests/Pods-MrIdliTests.release.xcconfig"; sourceTree = "<group>"; };
+		19A1C5CA8B0E6332BE642D35 /* Pods_MrIdli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrIdli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34218A8242FE770225C4C496 /* Pods-MrIdliTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrIdliTests.debug.xcconfig"; path = "Target Support Files/Pods-MrIdliTests/Pods-MrIdliTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4197912124DAAB6C00C229DB /* Mister Idli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mister Idli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4197912424DAAB6C00C229DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4197912624DAAB6C00C229DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4197912824DAAB6C00C229DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,17 @@
 		4197914224DAAB6E00C229DB /* MrIdliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrIdliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4197914624DAAB6E00C229DB /* MrIdliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrIdliUITests.swift; sourceTree = "<group>"; };
 		4197914824DAAB6E00C229DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4197915424DABD0E00C229DB /* collectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionViewCell.swift; sourceTree = "<group>"; };
+		41B4ED6224DB084D00954FDB /* WebViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewer.swift; sourceTree = "<group>"; };
+		41B4ED6424DB0B3000954FDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41B4ED6624DB0BA700954FDB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		41E31FC424DBDAF200BC488F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		88915AF8C199F4CED981A082 /* Pods-MrIdli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrIdli.release.xcconfig"; path = "Target Support Files/Pods-MrIdli/Pods-MrIdli.release.xcconfig"; sourceTree = "<group>"; };
+		8E27796A8B65F39EF4D28461 /* Pods-MrIdli-MrIdliUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrIdli-MrIdliUITests.release.xcconfig"; path = "Target Support Files/Pods-MrIdli-MrIdliUITests/Pods-MrIdli-MrIdliUITests.release.xcconfig"; sourceTree = "<group>"; };
+		99F787A081199658A5744003 /* Pods-MrIdli-MrIdliUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrIdli-MrIdliUITests.debug.xcconfig"; path = "Target Support Files/Pods-MrIdli-MrIdliUITests/Pods-MrIdli-MrIdliUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6F64BA92D50F9AF87D8DBDE /* Pods_MrIdli_MrIdliUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrIdli_MrIdliUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF72EA88F3C8BCB931A3D18B /* Pods_MrIdliTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrIdliTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F979AB0A21950EDF789B1FE8 /* Pods-MrIdli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrIdli.debug.xcconfig"; path = "Target Support Files/Pods-MrIdli/Pods-MrIdli.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B4ED6724DB0BA700954FDB /* WebKit.framework in Frameworks */,
+				DA7C70ECB3732342E194B578 /* Pods_MrIdli.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808202F7E59E78CBCEC752AE /* Pods_MrIdliTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +95,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D704BE07E760F66EC6644A /* Pods_MrIdli_MrIdliUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35C95CE0AF447998F1B3A816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41B4ED6624DB0BA700954FDB /* WebKit.framework */,
+				19A1C5CA8B0E6332BE642D35 /* Pods_MrIdli.framework */,
+				B6F64BA92D50F9AF87D8DBDE /* Pods_MrIdli_MrIdliUITests.framework */,
+				EF72EA88F3C8BCB931A3D18B /* Pods_MrIdliTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4197911824DAAB6C00C229DB = {
 			isa = PBXGroup;
 			children = (
@@ -83,13 +120,15 @@
 				4197913A24DAAB6E00C229DB /* MrIdliTests */,
 				4197914524DAAB6E00C229DB /* MrIdliUITests */,
 				4197912224DAAB6C00C229DB /* Products */,
+				598DE2EEEDB0944DB758D615 /* Pods */,
+				35C95CE0AF447998F1B3A816 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		4197912224DAAB6C00C229DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4197912124DAAB6C00C229DB /* MrIdli.app */,
+				4197912124DAAB6C00C229DB /* Mister Idli.app */,
 				4197913724DAAB6E00C229DB /* MrIdliTests.xctest */,
 				4197914224DAAB6E00C229DB /* MrIdliUITests.xctest */,
 			);
@@ -99,9 +138,13 @@
 		4197912324DAAB6C00C229DB /* MrIdli */ = {
 			isa = PBXGroup;
 			children = (
+				41B4ED6424DB0B3000954FDB /* GoogleService-Info.plist */,
 				4197912424DAAB6C00C229DB /* AppDelegate.swift */,
 				4197912624DAAB6C00C229DB /* SceneDelegate.swift */,
 				4197912824DAAB6C00C229DB /* ViewController.swift */,
+				41B4ED6224DB084D00954FDB /* WebViewer.swift */,
+				4197915424DABD0E00C229DB /* collectionViewCell.swift */,
+				41E31FC424DBDAF200BC488F /* MenuView.swift */,
 				4197912A24DAAB6C00C229DB /* Main.storyboard */,
 				4197912D24DAAB6E00C229DB /* Assets.xcassets */,
 				4197912F24DAAB6E00C229DB /* LaunchScreen.storyboard */,
@@ -128,6 +171,19 @@
 			path = MrIdliUITests;
 			sourceTree = "<group>";
 		};
+		598DE2EEEDB0944DB758D615 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F979AB0A21950EDF789B1FE8 /* Pods-MrIdli.debug.xcconfig */,
+				88915AF8C199F4CED981A082 /* Pods-MrIdli.release.xcconfig */,
+				99F787A081199658A5744003 /* Pods-MrIdli-MrIdliUITests.debug.xcconfig */,
+				8E27796A8B65F39EF4D28461 /* Pods-MrIdli-MrIdliUITests.release.xcconfig */,
+				34218A8242FE770225C4C496 /* Pods-MrIdliTests.debug.xcconfig */,
+				0080A8B458BD69F051C46F17 /* Pods-MrIdliTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4197914B24DAAB6E00C229DB /* Build configuration list for PBXNativeTarget "MrIdli" */;
 			buildPhases = (
+				22B75987FB1FEBDB5580D5C4 /* [CP] Check Pods Manifest.lock */,
 				4197911D24DAAB6C00C229DB /* Sources */,
 				4197911E24DAAB6C00C229DB /* Frameworks */,
 				4197911F24DAAB6C00C229DB /* Resources */,
+				B6DC55588A601C825FA1F488 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,13 +203,14 @@
 			);
 			name = MrIdli;
 			productName = MrIdli;
-			productReference = 4197912124DAAB6C00C229DB /* MrIdli.app */;
+			productReference = 4197912124DAAB6C00C229DB /* Mister Idli.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4197913624DAAB6E00C229DB /* MrIdliTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4197914E24DAAB6E00C229DB /* Build configuration list for PBXNativeTarget "MrIdliTests" */;
 			buildPhases = (
+				E65876849F5CFD18DB844846 /* [CP] Check Pods Manifest.lock */,
 				4197913324DAAB6E00C229DB /* Sources */,
 				4197913424DAAB6E00C229DB /* Frameworks */,
 				4197913524DAAB6E00C229DB /* Resources */,
@@ -170,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4197915124DAAB6E00C229DB /* Build configuration list for PBXNativeTarget "MrIdliUITests" */;
 			buildPhases = (
+				47024483A2A8D527F6FFF4C7 /* [CP] Check Pods Manifest.lock */,
 				4197913E24DAAB6E00C229DB /* Sources */,
 				4197913F24DAAB6E00C229DB /* Frameworks */,
 				4197914024DAAB6E00C229DB /* Resources */,
+				15D0AFD59651D4C993DE7055 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4197913124DAAB6E00C229DB /* LaunchScreen.storyboard in Resources */,
+				41B4ED6524DB0B3000954FDB /* GoogleService-Info.plist in Resources */,
 				4197912E24DAAB6E00C229DB /* Assets.xcassets in Resources */,
 				4197912C24DAAB6C00C229DB /* Main.storyboard in Resources */,
 			);
@@ -254,13 +316,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15D0AFD59651D4C993DE7055 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MrIdli-MrIdliUITests/Pods-MrIdli-MrIdliUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MrIdli-MrIdliUITests/Pods-MrIdli-MrIdliUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MrIdli-MrIdliUITests/Pods-MrIdli-MrIdliUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22B75987FB1FEBDB5580D5C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MrIdli-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47024483A2A8D527F6FFF4C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MrIdli-MrIdliUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DC55588A601C825FA1F488 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MrIdli/Pods-MrIdli-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MrIdli/Pods-MrIdli-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MrIdli/Pods-MrIdli-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E65876849F5CFD18DB844846 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MrIdliTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4197911D24DAAB6C00C229DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B4ED6324DB084D00954FDB /* WebViewer.swift in Sources */,
+				41E31FC524DBDAF200BC488F /* MenuView.swift in Sources */,
 				4197912924DAAB6C00C229DB /* ViewController.swift in Sources */,
 				4197912524DAAB6C00C229DB /* AppDelegate.swift in Sources */,
+				4197915524DABD0E00C229DB /* collectionViewCell.swift in Sources */,
 				4197912724DAAB6C00C229DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +518,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BDBP9B69MD;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -366,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -410,6 +579,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BDBP9B69MD;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -420,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,16 +602,18 @@
 		};
 		4197914C24DAAB6E00C229DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F979AB0A21950EDF789B1FE8 /* Pods-MrIdli.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MrIdli/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MrIdli;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mister Idli";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,16 +621,18 @@
 		};
 		4197914D24DAAB6E00C229DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88915AF8C199F4CED981A082 /* Pods-MrIdli.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MrIdli/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MrIdli;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mister Idli";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +640,7 @@
 		};
 		4197914F24DAAB6E00C229DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34218A8242FE770225C4C496 /* Pods-MrIdliTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +662,7 @@
 		};
 		4197915024DAAB6E00C229DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0080A8B458BD69F051C46F17 /* Pods-MrIdliTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +684,7 @@
 		};
 		4197915224DAAB6E00C229DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F787A081199658A5744003 /* Pods-MrIdli-MrIdliUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +704,7 @@
 		};
 		4197915324DAAB6E00C229DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E27796A8B65F39EF4D28461 /* Pods-MrIdli-MrIdliUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
