@@ -9,6 +9,8 @@ target 'MrIdli' do
   pod 'Firebase/Core'
   pod 'FirebaseFirestore'
   pod 'SDWebImage'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Analytics'
 
   target 'MrIdliTests' do
     inherit! :search_paths

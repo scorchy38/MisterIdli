@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var findourStoreButton : UIButton!
     @IBOutlet weak var menuButton : UIButton!
     @IBOutlet weak var progressView: UIActivityIndicatorView!
+    @IBOutlet weak var pageController : UIPageControl!
     
     
     let cellScale:CGFloat = 0.6
@@ -26,15 +27,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         progressView.startAnimating()
-        let screenSize = UIScreen.main.bounds.size
-       // let cellWidth = floor(screenSize.width * cellScale)
-        let cellHeight = floor(screenSize.height * cellScale)
-      //  let insetX = (view.bounds.width - cellWidth) / 2.0
-        let insetY = (view.bounds.height - cellHeight) / 2.0
-
-       // let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
-      //  layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
-        collectionView.contentInset = UIEdgeInsets(top: insetY, left: 51.5, bottom: insetY, right: 51.5)
+//        let screenSize = collectionView.frame.size
+//        let cellWidth = (screenSize.width - 25)
+//        let cellHeight = (screenSize.height - 10)
+//        let insetX = (view.frame.width - cellWidth) / 2.0
+//        let insetY = (view.frame.height - cellHeight) / 2.0
+//
+//       // let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+//       // layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+//        collectionView.contentInset = UIEdgeInsets(top: insetY, left: insetX, bottom: insetY, right: insetX)
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -67,6 +68,7 @@ class ViewController: UIViewController {
                     self.imageArray.append(documenturl)
                     self.collectionView.reloadData()
                 }
+                self.pageController.numberOfPages = self.imageArray.count
                 self.progressView.stopAnimating()
                 self.progressView.isHidden = true
                 self.startTimer()
@@ -74,6 +76,10 @@ class ViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view.
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        pageController.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
     }
     
     @IBAction func callUsButtonEvent(_ sender: UIButton) {
@@ -93,13 +99,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func findStoreButtonEvent(_ sender: UIButton) {
+      //  self.openTrackerInBrowser()
         let lat = (25.4017058)
         let longi = (55.4417783)
-        if let UrlNavigation = URL.init(string: "comgooglemaps://?center=\(lat),\(longi)&zoom=12") {
+        if let UrlNavigation = URL.init(string: "comgooglemaps://?saddr=&daddr=\(lat),\(longi)") {
             if UIApplication.shared.canOpenURL(UrlNavigation){
-//                    if let urlDestination = URL.init(string: "comgooglemaps://?center=\(lat),\(longi)&zoom=12") {
-//                        UIApplication.shared.open(urlDestination)
-//                    }
+                    if let urlDestination = URL.init(string: "comgooglemaps://?saddr=&daddr=\(lat),\(longi)") {
+                        UIApplication.shared.open(urlDestination)
+                    }
             }
             else {
                 NSLog("Can't use comgooglemaps://");
@@ -137,7 +144,6 @@ class ViewController: UIViewController {
                       if ((current)  < imageArray.count - 1){
                           let indexPath1: IndexPath?
                           indexPath1 = IndexPath.init(row: current + 1, section: 0)
-                          
                           coll.scrollToItem(at: indexPath1!, at: .right, animated: true)
                         current = current+1
                       }
@@ -147,6 +153,7 @@ class ViewController: UIViewController {
                           coll.scrollToItem(at: indexPath1!, at: .left, animated: true)
                         current = 0
                       }
+            pageController.currentPage = current
                       
                   
               }
@@ -176,8 +183,6 @@ extension ViewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! collectionViewCell
         let image = imageArray[indexPath.item]
-        cell.pageControl.numberOfPages = imageArray.count
-        cell.pageControl.currentPage = indexPath.row
         cell.image.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "loading"), options: [.continueInBackground, .progressiveLoad])
         cell.image.layer.cornerRadius = 10
         cell.image.layer.masksToBounds = true
@@ -197,6 +202,17 @@ extension ViewController : UIScrollViewDelegate, UICollectionViewDelegate{
         offset = CGPoint(x: roundedIndex*cellWidthIncludingSpacing - scrollView.contentInset.left, y: scrollView.contentInset.top)
         
         targetContentOffset.pointee = offset
+    }
+}
+
+extension ViewController : UICollectionViewDelegateFlowLayout{
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+//    }
+//
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = collectionView.frame.size
+        return CGSize(width: size.width, height: size.height)
     }
 }
 

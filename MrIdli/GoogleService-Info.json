@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "977362800284",
+    "firebase_url": "https://chat-9fa29.firebaseio.com",
+    "project_id": "chat-9fa29",
+    "storage_bucket": "chat-9fa29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977362800284:android:95f11da4aa6e95b344e759",
+        "android_client_info": {
+          "package_name": "com.godani.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977362800284-8e1bjjlf5kvjjomqv8q47rrrksk49qm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgYO1fJtHX-hBvVO38_qFuprhomCza2cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977362800284-8e1bjjlf5kvjjomqv8q47rrrksk49qm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -17,8 +17,8 @@
 		4197913C24DAAB6E00C229DB /* MrIdliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197913B24DAAB6E00C229DB /* MrIdliTests.swift */; };
 		4197914724DAAB6E00C229DB /* MrIdliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197914624DAAB6E00C229DB /* MrIdliUITests.swift */; };
 		4197915524DABD0E00C229DB /* collectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197915424DABD0E00C229DB /* collectionViewCell.swift */; };
+		41AB60A124E2BBD000020370 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AB60A024E2BBD000020370 /* GoogleService-Info.plist */; };
 		41B4ED6324DB084D00954FDB /* WebViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4ED6224DB084D00954FDB /* WebViewer.swift */; };
-		41B4ED6524DB0B3000954FDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B4ED6424DB0B3000954FDB /* GoogleService-Info.plist */; };
 		41B4ED6724DB0BA700954FDB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B4ED6624DB0BA700954FDB /* WebKit.framework */; };
 		41E31FC524DBDAF200BC488F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E31FC424DBDAF200BC488F /* MenuView.swift */; };
 		808202F7E59E78CBCEC752AE /* Pods_MrIdliTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF72EA88F3C8BCB931A3D18B /* Pods_MrIdliTests.framework */; };
@@ -63,8 +63,9 @@
 		4197914624DAAB6E00C229DB /* MrIdliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrIdliUITests.swift; sourceTree = "<group>"; };
 		4197914824DAAB6E00C229DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4197915424DABD0E00C229DB /* collectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionViewCell.swift; sourceTree = "<group>"; };
+		41AB60A024E2BBD000020370 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41AB60A224E2C39B00020370 /* Mister Idli.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mister Idli.entitlements"; sourceTree = "<group>"; };
 		41B4ED6224DB084D00954FDB /* WebViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewer.swift; sourceTree = "<group>"; };
-		41B4ED6424DB0B3000954FDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41B4ED6624DB0BA700954FDB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		41E31FC424DBDAF200BC488F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		88915AF8C199F4CED981A082 /* Pods-MrIdli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrIdli.release.xcconfig"; path = "Target Support Files/Pods-MrIdli/Pods-MrIdli.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +141,8 @@
 		4197912324DAAB6C00C229DB /* MrIdli */ = {
 			isa = PBXGroup;
 			children = (
-				41B4ED6424DB0B3000954FDB /* GoogleService-Info.plist */,
+				41AB60A224E2C39B00020370 /* Mister Idli.entitlements */,
+				41AB60A024E2BBD000020370 /* GoogleService-Info.plist */,
 				4197912424DAAB6C00C229DB /* AppDelegate.swift */,
 				4197912624DAAB6C00C229DB /* SceneDelegate.swift */,
 				4197912824DAAB6C00C229DB /* ViewController.swift */,
@@ -297,8 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4197913124DAAB6E00C229DB /* LaunchScreen.storyboard in Resources */,
-				41B4ED6524DB0B3000954FDB /* GoogleService-Info.plist in Resources */,
 				416E1D9B24DD7A7B0060746C /* master_of_break.otf in Resources */,
+				41AB60A124E2BBD000020370 /* GoogleService-Info.plist in Resources */,
 				4197912E24DAAB6E00C229DB /* Assets.xcassets in Resources */,
 				4197912C24DAAB6C00C229DB /* Main.storyboard in Resources */,
 			);
@@ -609,15 +611,19 @@
 			baseConfigurationReference = F979AB0A21950EDF789B1FE8 /* Pods-MrIdli.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MrIdli/Mister Idli.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67BS2334TJ;
 				INFOPLIST_FILE = MrIdli/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MrIdli;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MisterIdli;
 				PRODUCT_NAME = "Mister Idli";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -628,15 +634,19 @@
 			baseConfigurationReference = 88915AF8C199F4CED981A082 /* Pods-MrIdli.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MrIdli/Mister Idli.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67BS2334TJ;
 				INFOPLIST_FILE = MrIdli/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MrIdli;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MisterIdli;
 				PRODUCT_NAME = "Mister Idli";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
