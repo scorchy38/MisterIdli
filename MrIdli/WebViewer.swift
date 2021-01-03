@@ -16,7 +16,7 @@ class WebViewer : UIViewController, WKNavigationDelegate{
         progressView.startAnimating()
         super.viewDidLoad()
         webView.navigationDelegate = self
-        let url = URL(string: "http://app.sapaad.online/?apk=92fda8f64a0d497a469a8f3a24f7a89a")!
+        let url = URL(string: "https://order.chatfood.io/mister-idli-restaurant/delivery")!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
         

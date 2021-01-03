@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -94,7 +96,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZP-h2-eur">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZP-h2-eur">
                                 <rect key="frame" x="16" y="568" width="343" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
@@ -106,7 +108,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fWl-7d-YjF">
-                                <rect key="frame" x="25" y="471" width="325" height="37"/>
+                                <rect key="frame" x="25" y="480.5" width="325" height="27.5"/>
                                 <color key="pageIndicatorTintColor" red="0.98823529409999999" green="0.69019607839999997" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.41176470590000003" green="0.23529411759999999" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -125,7 +127,7 @@
                                     <segue destination="3wX-10-keg" kind="show" id="aom-Br-ppK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGZ-R9-ww7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGZ-R9-ww7">
                                 <rect key="frame" x="16" y="518" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.41176470588235292" green="0.23529411764705882" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
@@ -137,6 +139,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.69019607839999997" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fWl-7d-YjF" secondAttribute="trailing" constant="25" id="1Hj-Xi-Ljp"/>
@@ -166,7 +169,6 @@
                             <constraint firstItem="BGZ-R9-ww7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uTh-cv-qFM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q2z-DY-cq7" secondAttribute="trailing" constant="16" id="veo-ug-bsc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="callUsButton" destination="31i-CH-iCb" id="Z2z-WG-QaJ"/>
@@ -223,17 +225,18 @@
                                 <rect key="frame" x="16" y="266" width="343" height="193.5"/>
                                 <string key="text">I, Mister Idli was born in the year 2018 on a auspicious Pongal day at Ajman, UAE. The culinary history of Travancore combined with Thanjavur has inspired me to present the traditional Nanjil Naatu cuisine to my guests with a personal touch. I strive hard to provide a traditional taste to my guests and make their tummy happy with my grandma's age old recipes. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrf-8b-mco">
                                 <rect key="frame" x="16" y="469.5" width="343" height="129"/>
                                 <string key="text">My menu provides balanced cuisine to satisfy the needs of the entire family. It will be a culinary journey of all South Indian states are on offer. Each dish has been carefully handpicked and cooked with love to make you feel a home away from home.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="B0g-SV-3fn"/>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.69019607839999997" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.98823529409999999" green="0.69019607839999997" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -257,7 +260,6 @@
                             <constraint firstItem="wrf-8b-mco" firstAttribute="top" secondItem="wl6-g9-Sew" secondAttribute="bottom" constant="10" id="ufY-Vh-Yf2"/>
                             <constraint firstItem="dfT-jY-2K5" firstAttribute="top" secondItem="TLZ-ej-oFt" secondAttribute="bottom" constant="15" id="whh-Ye-TSV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="B0g-SV-3fn"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vnd-ks-D9d"/>
                 </viewController>
@@ -286,6 +288,7 @@
                                 <color key="color" red="0.98823529409999999" green="0.69019607839999997" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="gjy-hj-dUP"/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.69019607843137254" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jK2-to-ZJH" firstAttribute="bottom" secondItem="gjy-hj-dUP" secondAttribute="bottom" id="HdQ-DF-39S"/>
@@ -295,7 +298,6 @@
                             <constraint firstItem="jK2-to-ZJH" firstAttribute="trailing" secondItem="gjy-hj-dUP" secondAttribute="trailing" id="f1f-ic-scW"/>
                             <constraint firstItem="4IV-cQ-e8p" firstAttribute="centerY" secondItem="lWY-0a-vLY" secondAttribute="centerY" id="gZA-3v-V0D"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gjy-hj-dUP"/>
                     </view>
                     <connections>
                         <outlet property="progressView" destination="4IV-cQ-e8p" id="8M4-ZM-vtm"/>
@@ -327,7 +329,8 @@
                                 <color key="color" red="0.98823529409999999" green="0.69019607839999997" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ZcG-kA-mYc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZcG-kA-mYc" firstAttribute="bottom" secondItem="aWV-yw-jPn" secondAttribute="bottom" id="2eG-h1-bl2"/>
                             <constraint firstItem="o8n-Ei-o9e" firstAttribute="centerY" secondItem="MCS-k4-cP1" secondAttribute="centerY" id="Nbj-bs-1bZ"/>
@@ -336,7 +339,6 @@
                             <constraint firstItem="o8n-Ei-o9e" firstAttribute="centerX" secondItem="MCS-k4-cP1" secondAttribute="centerX" id="ap3-DC-9mZ"/>
                             <constraint firstItem="aWV-yw-jPn" firstAttribute="top" secondItem="ZcG-kA-mYc" secondAttribute="top" id="toL-Xj-Pcw"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZcG-kA-mYc"/>
                     </view>
                     <navigationItem key="navigationItem" id="BzG-sM-fCL"/>
                     <connections>
@@ -354,7 +356,16 @@
         <image name="about us" width="1620" height="2488"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="logo" width="476" height="481"/>
-        <image name="map.fill" catalog="system" width="128" height="113"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

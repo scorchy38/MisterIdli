@@ -614,6 +614,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MrIdli/Mister Idli.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 67BS2334TJ;
 				INFOPLIST_FILE = MrIdli/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -621,6 +622,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MisterIdli;
 				PRODUCT_NAME = "Mister Idli";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -637,6 +639,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MrIdli/Mister Idli.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 67BS2334TJ;
 				INFOPLIST_FILE = MrIdli/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -644,6 +647,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MisterIdli;
 				PRODUCT_NAME = "Mister Idli";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -658,7 +662,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67BS2334TJ;
 				INFOPLIST_FILE = MrIdliTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -680,7 +686,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67BS2334TJ;
 				INFOPLIST_FILE = MrIdliTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -702,6 +710,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67BS2334TJ;
 				INFOPLIST_FILE = MrIdliUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -722,6 +731,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67BS2334TJ;
 				INFOPLIST_FILE = MrIdliUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
